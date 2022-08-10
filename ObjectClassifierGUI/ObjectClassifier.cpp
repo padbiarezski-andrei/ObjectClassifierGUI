@@ -189,7 +189,7 @@ namespace oc {
 	{
 		cv::Mat1f result;
 		cv::Mat tmp;
-		for (double angle = 0; angle < 360; angle += 10) {
+		for (double angle = 0; angle < 360; angle += 90) {
 			b.copyTo(tmp);
 			if (angle != 0) {
 				rotateWithoutCrop(b, tmp, angle);
