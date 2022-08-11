@@ -219,7 +219,7 @@ namespace oc {
 			left = a.cols - b.cols;
 		}
 
-		bottom = 0; right = 0;
+		bottom = top; right = left;
 		const  cv::Scalar BORDER_COLOR(255, 255, 255, 255);
 
 		copyMakeBorder(b, b, top, bottom, left, right, cv::BORDER_CONSTANT, BORDER_COLOR);
